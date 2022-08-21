@@ -5,11 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction</title>
+
+    <style>
+        body {
+            background-color: azure;
+        }
+
+        h1 {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height:auto;
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+
+        .category {
+            font-weight: bold;
+        }
+
+    </style>
 </head>
 <body>
     <h1>Hello, I'm Jia Ler</h1> <br>
-    <img src="ninjachicken.gif" width="400" height="270"> <br>
+    <img src="dp.jpg" width="400" height="270"> <br>
+
+    <!-- need to add page to send form -->
     <form action="index.html" method="get">
+
         <table border="1">
             <tr>
                 <th>Name: </th>
@@ -17,35 +45,49 @@
             </tr>
 
             <tr>
-                <td> <label for="status">Relationship Status: </label></td> <br>
+                <td> <label for="status" class="category">Relationship Status: </label></td> 
+                    <br>
+
                 <td>
-                    <label for="single">Single</label> <br>
                     <input type="radio" name="status" id="single">
+                    <label for="single">Single</label> 
                     
-                    <label for="attached">Attached</label> <br>
+                    <br>
+                    
                     <input type="radio" name="status" id="attached">
+                    <label for="attached">Attached</label> 
                     
-                    <label for="complicated">Complicated</label>
+                    <br>
+
                     <input type="radio" name="status" id="complicated">
+                    <label for="complicated">Complicated</label>
+                    
                      
                 </td>
             </tr>
 
             <tr>
-                <td> <label for="fruits">Favorite Fruits</label></td> <br>
+                <td> <label for="fruits" class="category">Favorite Fruits</label></td> 
+                    <br>
                 <td>
+                    <input type="checkbox" name="fruits" id="apple">
                     <label for="apple">Apple</label>
-                    <input type="checkbox" name="fruits" id="apple"> <br>
-
+                        <br>
+                    
+                    <input type="checkbox" name="fruits" id="banana">
                     <label for="banana">Banana</label>
-                    <input type="checkbox" name="fruits" id="banana"> <br>
+                        
+                        <br>
 
+                    <input type="checkbox" name="fruits" id="carrot">
                     <label for="carrot">Carrot</label>
-                    <input type="checkbox" name="fruits" id="carrot"> <br> <br>
+                        <br>
+
                 </td>
             </tr>
         </table>
         <input type="submit" value="Submit">
     </form>
+
 </body>
 </html>
